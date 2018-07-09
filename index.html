@@ -10,6 +10,8 @@ Score: <span id="score">0</span>
   	</div>
     <canvas id="gameSpace" width="300" height="300"></canvas>
     
+	  <input type="button" value="Restart" onClick="reload">
+
     <script>
 
       const CANVAS_BORDER = 'black';
@@ -143,7 +145,7 @@ Score: <span id="score">0</span>
 
 			return hitLeftWall || hitRightWall || hitTopWall || hitBottomWall
 			}
-
+	    
       document.addEventListener("keydown", changeDirection)
 			createFood();
       action();
